@@ -1,0 +1,223 @@
+
+.login_section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 11, 44, 0.727);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+.login_section.remove {
+    display: none;
+}
+
+.member_form {
+    position: relative;
+    width: 400px;
+    height: 470px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;  
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.member_form.new {
+    height: 520px;
+}
+
+.member_pages {
+    position: absolute;
+    min-width: 100%;
+    transition: all 0.5s;
+}
+
+.member_page_1 {
+    left: 0px;
+}
+
+.halfTwo {
+    top: 190px;
+}
+
+.member_page_2 {
+    left: 400px;
+    /* background-color: aqua; */
+    /* background-color: antiquewhite; */
+}
+
+.member_form.new .member_page_1 {
+    left: -400px;
+}
+
+.member_form.new .member_page_2 {
+    left: 0;
+}
+
+.member_form_title {
+    width: 100%;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    font-size: 23px;
+}
+
+.member_form_toggles  {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 0 40px;
+    margin: 80px 0 50px 0;
+    /* background-color: antiquewhite; */
+}
+
+.toggles_container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.toggles_container div {
+    z-index: 1;
+    color: black;
+}
+.toggles_container div:first-child {
+    color: darkorange;
+}
+
+.member_form.new .toggles_container div:first-child{
+    color: black;
+}
+
+.member_form.new .toggles_container div:last-of-type {
+    color: darkorange;
+}
+
+.toggles_container #slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.member_form.new .toggles_container #slider {
+    left: 50%;
+}
+
+.member_form_inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.member_form_inputs input {
+    /* height: 35px; */
+    padding: 10px 3%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.error_container {
+    width: 100%;
+    padding: 5px 40px;
+}
+
+.error_container #member_err {
+    font-size: 14px;
+    color: rgb(160, 3, 3);
+    visibility: hidden;
+}
+
+.member_form_bottom {
+    height: 100px;
+    /* margin-top: 29px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member_form_submit {
+    width: 80%;
+    /* margin: 10px 0;  */
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Page 2 */
+
+/* .signup_form_inputs {
+    /* background-color: rgb(80, 49, 8); */
+/* } */ */
+
+.signup_form_inputs div{
+    /* height: 30px; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 0 40px;
+
+}
+
+.signup_form_inputs input {
+    height: 100%;
+    font-size: 18px;
+    width: 48%;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+    padding: 10px 3%;
+    text-transform: capitalize;
+}
+
+.signup_row2 {
+    flex-direction: column;
+    gap: 10px;
+    /* background-color: antiquewhite; */
+}
+
+.signup_row2 input {
+    width: 100%;
+}
+
+.signup_row3 select {
+    width: 45%;
+    height: 45px;
+    border-radius: 15px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.second_bottom {
+    margin-top: 30px;
+    /* background-color: antiquewhite; */
+}

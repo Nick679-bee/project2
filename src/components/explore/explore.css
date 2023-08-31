@@ -1,0 +1,76 @@
+.explore_section { 
+    width: 100%; 
+    min-height: 40vh; 
+    display: flex; 
+    padding-bottom: 80px; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+} 
+ 
+#explore-text { 
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    /* color: black; */
+    margin: 60px 0px 60px 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+#beauty {
+    color: darkorange; 
+    font-family: 'Montserrat'; 
+}
+
+#planet {
+    color: green;
+    font-family: 'Montserrat';
+}
+
+.explore_cards_container{
+    width: 80%;
+    height: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.explore_card {
+    width: 250px;
+    height: 280px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.explore_card:hover .actual_image {
+    transform: scale(1.15);
+}
+
+.card_img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.card_txt {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.actual_image {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+

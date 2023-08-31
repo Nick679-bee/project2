@@ -1,0 +1,330 @@
+.book_section {
+    width: 100%;
+    min-height: calc(100vh - 62px);
+}
+
+#booking_title {
+    width: 100%;
+    height: 10%;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+    text-align: center;
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: 500;
+}
+
+#booking_title span {
+    color: orange;
+}
+
+body.dark #booking_title {
+    color: white;
+}
+
+body.dark #booking_title span {
+    color: orange;
+}
+/* =============== vuvweuvwe =============== */
+
+
+.booking_form {
+    width: 80%;
+    max-width: 500px;
+    min-width: 200px;
+    height: 415px;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 50px auto 0 auto;
+    padding: 30px 3%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#form_big_title {
+    /* color: darkorange; */
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#form_hor {
+    width: 80%;
+    margin: 20px auto;
+    border: 0.5px solid lightgray;
+}
+
+#page_wrapper {
+    position: relative;
+    max-height: 100%;
+    /* display: flex;
+    overflow-y: scroll; */
+}
+
+.page {
+    position: absolute;
+    top: 20px;
+    min-width: 100%;
+    transition: all 0.3s;
+}
+
+#pageOne {
+    left: 0;
+}
+
+#pageTwo {
+    left: 500px;
+}
+
+#pageThree {
+    left: 500px;
+}
+
+#pageFour {
+    left: 500px;
+}
+
+.page_title {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.form_field {
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+.form_field label {
+    display: block;
+    color: black;
+}
+
+.form_field input {
+    width: 100%;
+    padding: 8px 3%;
+    font-size: 18px;
+    text-transform: capitalize;
+    outline: none;
+    border: 0.5px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.button_field {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button_field button {
+    float: right;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#pageTwo .button_field,
+#pageThree .button_field,
+#pageFour .button_field {
+    justify-content: space-between;
+}
+
+/* ========= no use ========= */
+
+/* .no {
+.row_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 48%;
+}
+
+.select_btn {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.wrapper.active .content {
+    display: block;
+}
+
+.wrapper.active #drop_down {
+    transform: rotate(-180deg);
+    font-weight: bold;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content ul p {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.search {
+    height: 30px;
+    position: relative;
+}
+
+.search input {
+    height: 100%;
+    width: 100%;
+    padding-left: 25px;
+    font-size: 16px;
+    outline: none;
+    border: 0.3px solid;
+    border-radius: 4px;
+}
+
+#search_icon {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+}
+
+.options {
+    margin: 5px 0 0 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 18px;
+}
+
+.options::-webkit-scrollbar {
+    width: 3px;
+}
+
+.options::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 25px;
+}
+
+.options::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+.options li {
+    height: 30px;
+}
+
+.options li:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+} */
+
+/* ========= no use ========= */
+
+
+.row_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container select {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: content-box;
+    appearance: none;
+    height: 40px;
+    width: 150px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#dropDown {
+    position: absolute;
+    right: 2%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.row_2 {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row_2 .form_field {
+    width: 160px;
+    /* max-width: 400px; */
+}
+
+.row_2 .form_field input {
+    height: 40px;
+    /* padding: 0; */
+}
+
+@media screen and (max-width: 497px) {
+    .booking_form {
+        overflow-y: scroll;
+    }
+    .row_1 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container select {
+        width: 250px;
+    }
+    .row_2 {
+        flex-direction: column;
+    }
+    .row_2 .form_field {
+        width: 268px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .booking_form {
+        width: 90%;
+    }
+}
